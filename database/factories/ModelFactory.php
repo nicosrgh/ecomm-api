@@ -32,3 +32,10 @@ $factory->define(\App\Domain\Core\Model\Product::class, function (Faker $faker) 
     ];
 });
 
+$factory->define(\App\Domain\Core\Model\ProductType::class, function (Faker $faker) {
+    return [
+        'name' => $faker->name,
+        'image_url' => $faker->imageUrl(300, 300, null, true, null, true)
+    ];
+});
+

@@ -25,7 +25,8 @@ class ProductsTableSeeder extends Seeder
                                               'price' => 230000,
                                               'discount' => 0,
                                               'color' => 'Blue',
-                                              'image_url' => 'https://dummyimage.com/600x400/000/fff'
+                                              'image_url' => 'https://dummyimage.com/600x400/000/fff',
+                                              'product_type_id' => 3
                                           ],
                                           [
                                               'id' => 2,
@@ -34,7 +35,8 @@ class ProductsTableSeeder extends Seeder
                                               'price' => 120000,
                                               'discount' => 5,
                                               'color' => 'Brown',
-                                              'image_url' => 'https://dummyimage.com/300x300/000/fff'
+                                              'image_url' => 'https://dummyimage.com/300x300/000/fff',
+                                              'product_type_id' => 5
                                           ],
                                           [
                                               'id' => 3,
@@ -43,7 +45,8 @@ class ProductsTableSeeder extends Seeder
                                               'price' => 85000,
                                               'discount' => 5,
                                               'color' => 'White',
-                                              'image_url' => 'https://dummyimage.com/300x300/000/fff'
+                                              'image_url' => 'https://dummyimage.com/300x300/000/fff',
+                                              'product_type_id' => 2
                                           ],
                                           [
                                               'id' => 4,
@@ -52,7 +55,8 @@ class ProductsTableSeeder extends Seeder
                                               'price' => 15000000,
                                               'discount' => 5,
                                               'color' => 'Grey',
-                                              'image_url' => 'https://dummyimage.com/300x300/000/fff'
+                                              'image_url' => 'https://dummyimage.com/300x300/000/fff',
+                                              'product_type_id' => 4
                                           ]
 
                                       ]);

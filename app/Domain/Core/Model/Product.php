@@ -11,5 +11,10 @@ class Product extends Model
 
     protected $fillable = ['name', 'brand', 'price', 'discount', 'color', 'image_url'];
 
-    protected $hidden = ['created_at', 'updated_at', 'deleted_at'];
+    protected $hidden = ['created_at', 'updated_at', 'deleted_at', 'product_type_id'];
+
+    public function productType()
+    {
+        return $this->belongsTo(ProductType::class);
+    }
 }

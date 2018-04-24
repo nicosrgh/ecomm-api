@@ -27,6 +27,8 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
 
     public function getProducts()
     {
-        return $this->product->all();
+        return $this->product
+	        ->with('productType')
+	        ->get();
     }
 }

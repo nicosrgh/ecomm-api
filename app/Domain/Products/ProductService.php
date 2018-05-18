@@ -24,8 +24,8 @@ class ProductService extends Service implements ProductServiceInterface
         return $this->productService->getProduct($id);
     }
 
-    public function getProducts()
+    public function getProducts($search = '')
     {
-        return $this->productService->getProducts();
+        return $this->productService->getProducts($search);
     }
 }

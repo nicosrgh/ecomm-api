@@ -9,6 +9,7 @@
 namespace App\Domain\Products;
 
 use App\Domain\Core\Controller\Controller;
+use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
@@ -19,9 +20,10 @@ class ProductController extends Controller
         $this->productService = $productService;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $products = $this->productService->getProducts();
+        $search = $request->get('search');
+        $products = $this->productService->getProducts($search);
 
         return response()->json($products);
     }

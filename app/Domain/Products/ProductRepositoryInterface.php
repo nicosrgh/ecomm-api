@@ -12,5 +12,5 @@ interface ProductRepositoryInterface
 {
     public function getProduct($id);
 
-    public function getProducts();
+    public function getProducts($search = '');
 }

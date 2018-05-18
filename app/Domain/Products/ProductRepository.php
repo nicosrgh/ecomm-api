@@ -25,10 +25,13 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
         return $this->product->findOrFail($id);
     }
 
-    public function getProducts()
+    public function getProducts($search = '')
     {
         return $this->product
 	        ->with('productType')
+            ->where(function ($query) use ($search) {
+                $query->where('name', 'LIKE', "%{$search}%");
+            })
 	        ->get();
     }
 }

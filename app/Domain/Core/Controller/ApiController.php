@@ -32,6 +32,11 @@ class ApiController extends Controller
         return $this;
     }
 
+    public function testConflict2()
+    {
+      return "Belajar reolve conflict";
+    }
+
     public function respondCreated($message, $data = null)
     {
         return $this->respond([
